@@ -4,11 +4,11 @@
 ## Description
 - A desktop application that can be used to maintain a student register
 - Project type: Solo
-- Technologies used: Java, JavaFX, SceneBuilder, SQLite
+- Technologies used: Java, SQLite, JavaFX, SceneBuilder
 
 ## Features
-- Create, read, update and delete information of students, courses and the course records associated
-- Get printable student records in PDF-form
+- Maintain a register of students, courses and student records by creating, reading, updating and deleting information of students, courses and the records associated with those.
+- Get printable student records in PDF form
 - A custom UI
 
 ## Learning objectives
