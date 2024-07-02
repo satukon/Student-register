@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="primaryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="752.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.satumaarit.OpiskelijaRekisteriFXMLController">
+   <top>
+      <Pane prefHeight="29.0" prefWidth="1205.0" style="-fx-background-color: #B3B5BD;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="4.0" layoutY="2.0" styleClass="header" text=" © Satu Kontinen 2024" textFill="#404252">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <TabPane prefHeight="786.0" prefWidth="1205.0" stylesheets="@styles.css" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab fx:id="tabStudents" onSelectionChanged="#tabStudentsSelected" text="Students">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" onMouseClicked="#tabAreaClicked" prefHeight="683.0" prefWidth="1054.0" styleClass="background">
+                     <children>
+                        <TableView fx:id="tableStudents" editable="true" layoutX="21.0" layoutY="65.0" prefHeight="411.0" prefWidth="1160.0">
+                          <columns>
+                            <TableColumn fx:id="tableColumnStudentnumber" minWidth="-1.0" prefWidth="75.0" text="Student id" />
+                            <TableColumn fx:id="tableColumnStudentFirstname" minWidth="-1.0" prefWidth="107.0" text="First name" />
+                              <TableColumn fx:id="tableColumnStudentLastname" minWidth="-1.0" prefWidth="150.0" text="Last name" />
+                              <TableColumn fx:id="tableColumnStudentHomeadress" minWidth="-1.0" prefWidth="167.0" text="Home address" />
+                              <TableColumn fx:id="tableColumnStudentPostalcode" minWidth="-1.0" prefWidth="96.0" text="Postal code" />
+                              <TableColumn fx:id="tableColumnStudentCity" minWidth="-1.0" prefWidth="135.0" text="City" />
+                              <TableColumn fx:id="tableColumnStudentMail" minWidth="-1.0" prefWidth="185.0" text="E-mail" />
+                              <TableColumn fx:id="tableColumnStudentPhone" minWidth="-1.0" prefWidth="110.0" text="Phone number" />
+                              <TableColumn fx:id="tableColumnDeleteStudent" maxWidth="498.49993896484375" minWidth="90.0" prefWidth="100.0" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnAddStudent" layoutX="925.0" layoutY="635.0" mnemonicParsing="false" onAction="#btnAddStudentClicked" prefHeight="26.0" prefWidth="250.0" text="Add a new student" />
+                        <VBox layoutX="21.0" layoutY="10.0" prefHeight="53.0" prefWidth="157.0">
+                           <children>
+                              <Label text="Search by student id:" />
+                              <TextField fx:id="inputFieldSearchByStudentId" onKeyTyped="#searchByStudentId" prefHeight="26.0" prefWidth="156.0" promptText="Write..." />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="203.0" layoutY="10.0" prefHeight="53.0" prefWidth="189.0">
+                           <children>
+                              <Label text="Search by student's name:" />
+                              <TextField fx:id="inputFieldSearchByStudentName" onKeyTyped="#searchByStudentName" prefHeight="26.0" prefWidth="150.0" promptText="Write..." />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </VBox>
+                        <Button fx:id="btnShowAllStudents" layoutX="925.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnShowAllStudentsClicked" prefHeight="26.0" prefWidth="250.0" text="Show all students" />
+                        <HBox layoutX="21.0" layoutY="480.0" prefHeight="144.0" prefWidth="1160.0">
+                           <children>
+                              <VBox maxWidth="350.0" prefHeight="155.0" prefWidth="350.0">
+                                 <children>
+                                    <Label styleClass="info-label" text="Student's personal information">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="First name">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtFieldFirstname">
+                                       <VBox.margin>
+                                          <Insets bottom="8.0" left="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label text="Last name">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtFieldLastname">
+                                       <VBox.margin>
+                                          <Insets left="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets right="55.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="149.0" prefWidth="350.0">
+                                 <children>
+                                    <Label styleClass="info-label" text="Student's address information">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Home address">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtFieldAddress">
+                                       <VBox.margin>
+                                          <Insets bottom="8.0" left="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="17.0" prefWidth="263.0" text="Postal code                       City">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox>
+                                       <children>
+                                          <TextField fx:id="txtFieldPostalcode" maxWidth="290.0" minWidth="97.0" prefHeight="30.0" prefWidth="97.0">
+                                             <HBox.margin>
+                                                <Insets right="25.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <TextField fx:id="txtFieldCity" prefHeight="30.0" prefWidth="241.0" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets right="55.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="98.0" prefWidth="350.0">
+                                 <children>
+                                    <Label styleClass="info-label" text="Student's contact information">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="E-mail address">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtFieldMail">
+                                       <VBox.margin>
+                                          <Insets bottom="8.0" left="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label text="Phone number">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtFieldPhone">
+                                       <VBox.margin>
+                                          <Insets left="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tabCourses" onSelectionChanged="#tabCoursesSelected" text="Courses">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" onMouseClicked="#tabAreaClicked" prefHeight="744.0" prefWidth="1205.0" styleClass="background">
+                     <children>
+                        <TableView fx:id="tableCourses" editable="true" layoutX="21.0" layoutY="65.0" prefHeight="411.0" prefWidth="1160.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnCourseid" prefWidth="75.0" text="Course id" />
+                              <TableColumn fx:id="tableColumnCourseName" minWidth="6.0" prefWidth="440.0" text="Course" />
+                              <TableColumn fx:id="tableColumnCourseEducationprogram" maxWidth="500.0" minWidth="5.0" prefWidth="410.0" text="Filed of study" />
+                              <TableColumn fx:id="tableColumnCourseCredits" maxWidth="322.0" minWidth="6.0" prefWidth="100.0" text="Credits" />
+                              <TableColumn fx:id="tableColumnDeleteCourse" maxWidth="293.5" minWidth="44.0" prefWidth="100.0" />
+                           </columns>
+                        </TableView>
+                        <VBox layoutX="21.0" layoutY="10.0" prefHeight="53.0" prefWidth="157.0">
+                           <children>
+                              <Label text="Search by course id:" />
+                              <TextField fx:id="inputFieldSearchByCourseid" onKeyTyped="#searchByCourseId" prefHeight="26.0" prefWidth="215.0" promptText="Write..." />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="203.0" layoutY="10.0" prefHeight="53.0" prefWidth="189.0">
+                           <children>
+                              <Label text="Search by course's name:" />
+                              <TextField fx:id="inputFieldSearchByCoursename" onKeyTyped="#searchByCourseName" prefHeight="26.0" prefWidth="215.0" promptText="Write..." />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </VBox>
+                        <Button fx:id="btnShowAllCourses" layoutX="925.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnShowAllCoursesClicked" prefHeight="26.0" prefWidth="250.0" text="Show all courses" />
+                        <Button fx:id="btnAddCourse" layoutX="925.0" layoutY="635.0" mnemonicParsing="false" onAction="#btnAddCourseClicked" prefHeight="26.0" prefWidth="250.0" text="Add a new course" />
+                        <HBox layoutX="21.0" layoutY="478.0" prefHeight="100.0" prefWidth="1160.0">
+                           <children>
+                              <VBox maxWidth="350.0" prefHeight="100.0" prefWidth="350.0">
+                                 <children>
+                                    <Label styleClass="info-label" text="Course's information">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Name of course">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtFieldCoursename">
+                                       <VBox.margin>
+                                          <Insets bottom="8.0" left="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets right="55.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="350.0">
+                                 <children>
+                                    <Label styleClass="info-label">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="460.0" text="Field of study">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin></Label>
+                                    <HBox prefHeight="32.0" prefWidth="350.0">
+                                       <children>
+                                          <ComboBox fx:id="comboboxFieldofstudy" prefHeight="31.0" prefWidth="350.0" promptText="Choose...">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                          <Label>
+                                             <HBox.margin>
+                                                <Insets top="15.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets right="55.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="350.0">
+                                 <children>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Credits">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="comboboxCredits" prefHeight="31.0" prefWidth="350.0" promptText="Choose...">
+                                       <VBox.margin>
+                                          <Insets left="10.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabStudentRecords" onSelectionChanged="#tabStudentRecordsSelected" text="Student records">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" onMouseClicked="#tabAreaClicked" prefHeight="602.0" prefWidth="886.0" styleClass="background">
+                     <children>
+                        <TableView fx:id="tableStudentRecords" editable="true" layoutX="21.0" layoutY="65.0" onMouseClicked="#studentRecordsTableRowClicked" prefHeight="411.0" prefWidth="1160.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnStudentGradesGradeId" prefWidth="75.0" text="Student id" />
+                              <TableColumn fx:id="tableColumnStudentGradesStudentFirstname" prefWidth="140.0" text="Student's first name" />
+                              <TableColumn fx:id="tableColumnStudentGradesStudentLastname" prefWidth="170.0" text="Student's last name" />
+                              <TableColumn fx:id="tableColumnStudentGradesCourseName" minWidth="6.0" prefWidth="280.0" text="Completed course" />
+                              <TableColumn fx:id="tableColumnStudentGradesCoursesCredits" minWidth="6.0" prefWidth="100.0" text="Credits" />
+                              <TableColumn fx:id="tableColumnStudentGradesCourseEvaluationdate" maxWidth="200.0" minWidth="6.0" prefWidth="160.0" text="Date of evaluation" />
+                              <TableColumn fx:id="tableColumnStudentGradesCourseGrade" minWidth="6.0" prefWidth="100.0" text="Grade" />
+                              <TableColumn fx:id="tableColumnStudentGradesDeleteGrade" minWidth="0.0" prefWidth="100.0" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="925.0" layoutY="635.0" mnemonicParsing="false" onAction="#btnAddStudentRecordClicked" prefHeight="26.0" prefWidth="250.0" text="Add a new record for student" />
+                        <VBox layoutX="21.0" layoutY="10.0" prefHeight="46.0" prefWidth="157.0">
+                           <children>
+                              <Label text="Search by student id:" />
+                              <TextField fx:id="inputFieldSearchStudentRecordByStudentId" onKeyTyped="#searchStudentRecordByStudentId" prefHeight="26.0" prefWidth="215.0" promptText="Write..." />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="635.0" layoutY="19.0" prefHeight="39.0" prefWidth="227.0">
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="203.0" layoutY="10.0" prefHeight="53.0" prefWidth="189.0">
+                           <children>
+                              <Label text="Search by student's name:" />
+                              <TextField fx:id="inputFieldSearchStudentRecordByStudentName" onKeyTyped="#searchStudentRecordByStudentName" prefHeight="26.0" prefWidth="215.0" promptText="Write..." />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </VBox>
+                        <Button layoutX="925.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnShowAllStudentRecordsClicked" prefHeight="26.0" prefWidth="250.0" text="Show records for all students" />
+                        <HBox layoutX="21.0" layoutY="527.0" prefHeight="107.0" prefWidth="1160.0">
+                           <children>
+                              <VBox prefHeight="100.0" prefWidth="350.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="21.0">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Completed course">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="comboboxCourse" prefHeight="31.0" prefWidth="350.0" promptText="Choose...">
+                                       <VBox.margin>
+                                          <Insets bottom="8.0" left="10.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets right="55.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="350.0">
+                                 <children>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Grade">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="10.0" />
+                                       </VBox.margin></Label>
+                                    <ComboBox fx:id="comboboxGrade" prefHeight="31.0" prefWidth="350.0" promptText="Choose...">
+                                       <VBox.margin>
+                                          <Insets left="10.0" />
+                                       </VBox.margin></ComboBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="55.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="350.0">
+                                 <children>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Date of evaluation">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" />
+                                       </VBox.margin></Label>
+                                    <DatePicker fx:id="datePickerEvaluationDate" editable="false" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="350.0" promptText="Choose..." />
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="btnShowStudentRecord" layoutX="420.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnShowStudentRecordClicked" prefHeight="26.0" prefWidth="250.0" text="Open pdf report" visible="false" />
+                        <VBox layoutX="21.0" layoutY="480.0" prefHeight="0.0" prefWidth="350.0">
+                           <children>
+                              <Label styleClass="info-label" text="Select a student">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <ComboBox fx:id="comboboxStudent" prefWidth="350.0" promptText="Choose...">
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="10.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

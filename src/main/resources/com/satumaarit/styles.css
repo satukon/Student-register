@@ -1,0 +1,514 @@
+/* The background of tab panes */
+.background {
+    -fx-background-color: #F3F4F8;
+}
+
+/* Tab panes */
+.tab-pane {
+    -fx-tab-min-width: 175px;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #B3B5BD;
+    -fx-focus-color: transparent;
+}
+
+/* Tabs */
+.tab-pane .tab {
+    -fx-background-insets: 0 2 0 1, 0, 0;
+    -fx-background-color: #D2D4DA;
+    -fx-background-radius: 15 15 0 1;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-pref-height: 30px;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #F3F4F8;
+    -fx-focus-color: transparent;
+    -fx-focus-effect: transparent;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #5B5D6B;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #404252;
+}
+
+/* Text fields */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8; /* Increased border radius for a smoother look */
+    -fx-text-fill: #404252;
+    -fx-focus-color: #404252; /* Visible focus color */
+    -fx-faint-focus-color: rgba(64, 66, 82, 0.3); /* Faint focus color for a soft glow effect */
+    -fx-padding: 5; /* Added padding for better spacing */
+    -fx-font-size: 14px; /* Adjusted font size for better readability */
+    -fx-border-color: #cccccc; /* Added subtle border */
+    -fx-border-width: 1; /* Border width */
+    -fx-border-radius: 8; /* Border radius to match background */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1); /* Soft shadow for a 3D effect */
+    -fx-transition: all 0.3s ease; /* Smooth transition for focus effect */
+}
+
+.text-field:focused {
+    -fx-text-fill: #404252;
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2); /* Enhanced shadow on focus */
+    -fx-border-color: #404252; /* Border color changes on focus */
+    -fx-border-width: 2; /* Slightly thicker border on focus */
+}
+
+
+/* Buttons */
+.button {
+    -fx-background-color: #404252;
+    -fx-text-fill: #F3F3F8;
+    -fx-background-radius: 15;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10; /* Added padding for better spacing */
+    -fx-font-size: 14px; /* Adjusted font size for better readability */
+    -fx-border-width: 2;
+    -fx-border-color: transparent;
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 1); /* Soft shadow for a 3D effect */
+    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    -fx-background-color: #5B5D6B;
+    -fx-text-fill: #F3F4F8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 1); /* Enhanced shadow on hover */
+    -fx-scale-x: 1.03; /* Slightly enlarge button on hover */
+    -fx-scale-y: 1.03; /* Slightly enlarge button on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #30303A; /* Darker shade for pressed state */
+    -fx-effect: none; /* Remove shadow on press */
+    -fx-scale-x: 1.0; /* Return to original size */
+    -fx-scale-y: 1.0; /* Return to original size */
+}
+
+
+/* Labels */
+.label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #404252;
+}
+
+.info-label{
+    -fx-font-size: 13px;
+    -fx-text-fill: #404252;
+    -fx-font-weight: bold;
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 0px;
+    -fx-border-color: #D2D4DA;
+    -fx-background-radius: 5;
+    -fx-table-cell-border-color: transparent; /* Remove cell borders for cleaner look */
+    -fx-padding: 5; /* Add padding around the table */
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-width: 0px; /* Remove row cell borders */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f9f9fc;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #dfe0e5;
+}
+
+.table-row-cell:selected {
+    -fx-text-background-color: #101223;
+    -fx-background-color: #dfe0e5;
+}
+
+/* Table cell styling */
+.table-cell {
+    -fx-alignment: center;
+    -fx-border-color: transparent;
+}
+
+.table-cell .background {
+    -fx-background-color: #404252;
+}
+
+/* Column header styling */
+.table-view .column-header {
+    -fx-background-color: #D2D4DA;
+    -fx-border-width: 1px;
+    -fx-border-color: #B3B5BD;
+    -fx-font-weight: bold; /* Bold text for headers */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+/* Scroll bars */
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: #dfe0e5;
+    -fx-background-radius: 20;
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color: #dfe0e5;
+    -fx-background-radius: 20;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 100;
+    -fx-padding: 4;
+    -fx-background-radius: 20;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+
+/* The background of tab panes */
+.background {
+    -fx-background-color: #F3F4F8;
+}
+
+/* Tab panes */
+.tab-pane {
+    -fx-tab-min-width: 175px;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #B3B5BD;
+    -fx-focus-color: transparent;
+}
+
+/* Tabs */
+.tab-pane .tab {
+    -fx-background-insets: 0 2 0 1, 0, 0;
+    -fx-background-color: #D2D4DA;
+    -fx-background-radius: 15 15 0 1;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-pref-height: 30px;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #F3F4F8;
+    -fx-focus-color: transparent;
+    -fx-focus-effect: transparent;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #5B5D6B;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #404252;
+}
+
+/* Text fields */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8; /* Increased border radius for a smoother look */
+    -fx-text-fill: #404252;
+    -fx-focus-color: #404252; /* Visible focus color */
+    -fx-faint-focus-color: rgba(64, 66, 82, 0.3); /* Faint focus color for a soft glow effect */
+    -fx-padding: 5; /* Added padding for better spacing */
+    -fx-font-size: 14px; /* Adjusted font size for better readability */
+    -fx-border-color: #cccccc; /* Added subtle border */
+    -fx-border-width: 1; /* Border width */
+    -fx-border-radius: 8; /* Border radius to match background */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1); /* Soft shadow for a 3D effect */
+    -fx-transition: all 0.3s ease; /* Smooth transition for focus effect */
+}
+
+.text-field:focused {
+    -fx-text-fill: #404252;
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2); /* Enhanced shadow on focus */
+    -fx-border-color: #404252; /* Border color changes on focus */
+    -fx-border-width: 2; /* Slightly thicker border on focus */
+}
+
+
+/* Buttons */
+.button {
+    -fx-background-color: #404252;
+    -fx-text-fill: #F3F3F8;
+    -fx-background-radius: 15;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10; /* Added padding for better spacing */
+    -fx-font-size: 14px; /* Adjusted font size for better readability */
+    -fx-border-width: 2;
+    -fx-border-color: transparent;
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 1); /* Soft shadow for a 3D effect */
+    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    -fx-background-color: #5B5D6B;
+    -fx-text-fill: #F3F4F8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 1); /* Enhanced shadow on hover */
+    -fx-scale-x: 1.03; /* Slightly enlarge button on hover */
+    -fx-scale-y: 1.03; /* Slightly enlarge button on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #30303A; /* Darker shade for pressed state */
+    -fx-effect: none; /* Remove shadow on press */
+    -fx-scale-x: 1.0; /* Return to original size */
+    -fx-scale-y: 1.0; /* Return to original size */
+}
+
+
+/* Labels */
+.label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #404252;
+}
+
+.info-label{
+    -fx-font-size: 13px;
+    -fx-text-fill: #404252;
+    -fx-font-weight: bold;
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 0px;
+    -fx-border-color: #D2D4DA;
+    -fx-background-radius: 5;
+    -fx-table-cell-border-color: transparent; /* Remove cell borders for cleaner look */
+    -fx-padding: 5; /* Add padding around the table */
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-width: 0px; /* Remove row cell borders */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f9f9fc;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #dfe0e5;
+}
+
+.table-row-cell:selected {
+    -fx-text-background-color: #101223;
+    -fx-background-color: #dfe0e5;
+}
+
+/* Table cell styling */
+.table-cell {
+    -fx-alignment: center;
+    -fx-border-color: transparent;
+}
+
+.table-cell .background {
+    -fx-background-color: #404252;
+}
+
+/* Column header styling */
+.table-view .column-header {
+    -fx-background-color: #D2D4DA;
+    -fx-border-width: 1px;
+    -fx-border-color: #B3B5BD;
+    -fx-font-weight: bold; /* Bold text for headers */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+/* Scroll bars */
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: #dfe0e5;
+    -fx-background-radius: 20;
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color: #dfe0e5;
+    -fx-background-radius: 20;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 100;
+    -fx-padding: 4;
+    -fx-background-radius: 20;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+
+
+/* Combo box */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8;
+    -fx-text-fill: #404252;
+    -fx-font-size: 14px;
+    -fx-padding: 1;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+    -fx-transition: all 0.3s ease;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0;
+    -fx-background-radius: 8;
+    -fx-padding: 5;
+}
+
+.combo-box .arrow-button:hover {
+    -fx-background-color: #e0e0e0; /* Light grey hover color */
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color: #404252; /* Arrow color */
+
+}
+
+.combo-box:focused {
+    -fx-border-color: #404252; /* Border color on focus */
+        -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2); /* Enhanced shadow on focus */
+}
+
+.combo-box .list-view {
+    -fx-background-color: #f0f0f0; /* Popup background color */
+    -fx-background-radius: 8;
+    -fx-border-color: #cccccc; /* Popup border color */
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.2), 10, 0, 0, 2); /* Soft shadow */
+}
+
+.combo-box .list-view .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #404252;
+    -fx-padding: 5 8; /* Padding for list items */
+    -fx-border-width: 0 0 1 0; /* Bottom border for list items */
+    -fx-border-color: #e0e0e0;
+}
+
+.combo-box .list-view .list-cell:last-child {
+    -fx-border-width: 0; /* No bottom border for the last item */
+}
+
+.combo-box .list-view .list-cell:hover {
+    -fx-background-color: #404252;
+    -fx-text-fill: #ffffff; /* Text color on hover */
+}
+
+
+/* Date Picker */
+.date-picker {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8;
+    -fx-text-fill: #404252;
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+    -fx-transition: all 0.3s ease;
+}
+
+.date-picker:focused {
+    -fx-border-color: #404252; /* Border color on focus */
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2); /* Enhanced shadow on focus */
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0;
+    -fx-background-radius: 8;
+    -fx-padding: 1 15;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #e0e0e0; /* Light grey hover color */
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #404252; /* Arrow color */
+}
+
+.date-picker .popup {
+    -fx-background-color: #f0f0f0; /* Popup background color */
+    -fx-background-radius: 8;
+    -fx-border-color: #cccccc; /* Popup border color */
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.2), 10, 0, 0, 2); /* Soft shadow */
+}
+
+.date-picker .day-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #404252;
+    -fx-padding: 5 8; /* Padding for day cells */
+}
+
+.date-picker .day-cell:hover {
+    -fx-background-color: #404252;
+    -fx-text-fill: #ffffff; /* Text color on hover */
+}
+
+.date-picker .date-picker-label {
+    -fx-font-size: 14px; /* Adjusted font size */
+    -fx-text-fill: #404252;
+}
