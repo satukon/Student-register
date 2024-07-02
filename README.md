@@ -16,5 +16,6 @@
 - To show that I can design and build a desktop application
 
 ## Prerequisites
-- Project type: Maven, Java 17 and <a href="https://gluonhq.com/products/scene-builder/">SceneBuilder</a>
+- Project type: Maven, Java 17
+- Installed <a href="https://gluonhq.com/products/scene-builder/">SceneBuilder</a>
 - Run from project root by using command: ``mvn clean javafx:run``
