@@ -12,7 +12,7 @@
 ## Description
 
 - Project type: Solo
-- Technologies used: Java, SQLite, JavaFX, SceneBuilder
+- Technologies used: SQLite, Java, JavaFX, CSS
 
 ## Features
 - Maintain a register of students, courses and the course records of students by creating, reading, updating and deleting information of students, courses and the records associated with those
