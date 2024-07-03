@@ -18,7 +18,7 @@
 - Maintain a register of students, courses and the course records of students by creating, reading, updating and deleting information of students, courses and the records associated with those
 - Get printable student records in PDF form
 
-## Learning objectives
+## Objectives
 - To showcase my code and my Java programming skills
 - To show that I can design and build applications independently
 
