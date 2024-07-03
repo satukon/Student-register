@@ -1,5 +1,6 @@
 ## Screenshots
-![Screenshot 2024-07-03 at 11 45 37](https://github.com/satukon/Student-register/assets/113008423/70307eb3-6b99-47be-a485-7072c2459581)
+![Screenshot 2024-07-03 at 11 45 37](https://github.com/satukon/Student-register/assets/113008423/5bd26106-1ab2-4b6c-b186-739af3bec381)
+
 
 ## Description
 
