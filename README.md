@@ -20,7 +20,7 @@
 
 ## Learning objectives
 - To showcase my code and my Java programming skills
-- To show that I can design and build applications
+- To show that I can design and build applications independently
 
 ## Prerequisites
 - Project type: Maven, Java 17
