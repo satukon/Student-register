@@ -8,7 +8,7 @@
 
 <img width="1206" alt="Screenshot 2024-07-03 at 12 41 07" src="https://github.com/satukon/Student-register/assets/113008423/26a487f7-22ab-4217-9185-38827f5a7362">
 
-
+## Info
 - Project type: Solo
 - Technologies used: SQLite, Java, JavaFX, CSS
 
