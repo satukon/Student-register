@@ -41,24 +41,24 @@
 /* Text fields */
 .text-field {
     -fx-background-color: #ffffff;
-    -fx-background-radius: 8; /* Increased border radius for a smoother look */
+    -fx-background-radius: 8;
     -fx-text-fill: #404252;
-    -fx-focus-color: #404252; /* Visible focus color */
-    -fx-faint-focus-color: rgba(64, 66, 82, 0.3); /* Faint focus color for a soft glow effect */
-    -fx-padding: 5; /* Added padding for better spacing */
-    -fx-font-size: 14px; /* Adjusted font size for better readability */
-    -fx-border-color: #cccccc; /* Added subtle border */
-    -fx-border-width: 1; /* Border width */
-    -fx-border-radius: 8; /* Border radius to match background */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1); /* Soft shadow for a 3D effect */
-    -fx-transition: all 0.3s ease; /* Smooth transition for focus effect */
+    -fx-focus-color: #404252;
+    -fx-faint-focus-color: rgba(64, 66, 82, 0.3);
+    -fx-padding: 5;
+    -fx-font-size: 14px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+    -fx-transition: all 0.3s ease;
 }
 
 .text-field:focused {
     -fx-text-fill: #404252;
-    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2); /* Enhanced shadow on focus */
-    -fx-border-color: #404252; /* Border color changes on focus */
-    -fx-border-width: 2; /* Slightly thicker border on focus */
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2);
+    -fx-border-color: #404252;
+    -fx-border-width: 2;
 }
 
 
@@ -68,28 +68,28 @@
     -fx-text-fill: #F3F3F8;
     -fx-background-radius: 15;
     -fx-font-weight: bold;
-    -fx-padding: 5 10; /* Added padding for better spacing */
-    -fx-font-size: 14px; /* Adjusted font size for better readability */
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
     -fx-border-width: 2;
     -fx-border-color: transparent;
-    -fx-cursor: hand; /* Change cursor to hand on hover */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 1); /* Soft shadow for a 3D effect */
-    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+    -fx-transition: all 0.3s ease;
 }
 
 .button:hover {
     -fx-background-color: #5B5D6B;
     -fx-text-fill: #F3F4F8;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 1); /* Enhanced shadow on hover */
-    -fx-scale-x: 1.03; /* Slightly enlarge button on hover */
-    -fx-scale-y: 1.03; /* Slightly enlarge button on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 1);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
 }
 
 .button:pressed {
-    -fx-background-color: #30303A; /* Darker shade for pressed state */
-    -fx-effect: none; /* Remove shadow on press */
-    -fx-scale-x: 1.0; /* Return to original size */
-    -fx-scale-y: 1.0; /* Return to original size */
+    -fx-background-color: #30303A;
+    -fx-effect: none;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
 }
 
 
@@ -111,13 +111,13 @@
     -fx-border-width: 0px;
     -fx-border-color: #D2D4DA;
     -fx-background-radius: 5;
-    -fx-table-cell-border-color: transparent; /* Remove cell borders for cleaner look */
-    -fx-padding: 5; /* Add padding around the table */
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 5;
 }
 
 .table-row-cell {
     -fx-background-color: transparent;
-    -fx-border-width: 0px; /* Remove row cell borders */
+    -fx-border-width: 0px;
 }
 
 .table-row-cell:odd {
@@ -152,7 +152,7 @@
     -fx-background-color: #D2D4DA;
     -fx-border-width: 1px;
     -fx-border-color: #B3B5BD;
-    -fx-font-weight: bold; /* Bold text for headers */
+    -fx-font-weight: bold;
 }
 
 .table-view .column-header-background {
@@ -237,24 +237,24 @@
 /* Text fields */
 .text-field {
     -fx-background-color: #ffffff;
-    -fx-background-radius: 8; /* Increased border radius for a smoother look */
+    -fx-background-radius: 8;
     -fx-text-fill: #404252;
-    -fx-focus-color: #404252; /* Visible focus color */
-    -fx-faint-focus-color: rgba(64, 66, 82, 0.3); /* Faint focus color for a soft glow effect */
-    -fx-padding: 5; /* Added padding for better spacing */
-    -fx-font-size: 14px; /* Adjusted font size for better readability */
-    -fx-border-color: #cccccc; /* Added subtle border */
-    -fx-border-width: 1; /* Border width */
-    -fx-border-radius: 8; /* Border radius to match background */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1); /* Soft shadow for a 3D effect */
-    -fx-transition: all 0.3s ease; /* Smooth transition for focus effect */
+    -fx-focus-color: #404252;
+    -fx-faint-focus-color: rgba(64, 66, 82, 0.3);
+    -fx-padding: 5;
+    -fx-font-size: 14px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+    -fx-transition: all 0.3s ease;
 }
 
 .text-field:focused {
     -fx-text-fill: #404252;
-    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2); /* Enhanced shadow on focus */
-    -fx-border-color: #404252; /* Border color changes on focus */
-    -fx-border-width: 2; /* Slightly thicker border on focus */
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2);
+    -fx-border-color: #404252;
+    -fx-border-width: 2;
 }
 
 
@@ -264,28 +264,28 @@
     -fx-text-fill: #F3F3F8;
     -fx-background-radius: 15;
     -fx-font-weight: bold;
-    -fx-padding: 5 10; /* Added padding for better spacing */
-    -fx-font-size: 14px; /* Adjusted font size for better readability */
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
     -fx-border-width: 2;
     -fx-border-color: transparent;
-    -fx-cursor: hand; /* Change cursor to hand on hover */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 1); /* Soft shadow for a 3D effect */
-    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+    -fx-transition: all 0.3s ease;
 }
 
 .button:hover {
     -fx-background-color: #5B5D6B;
     -fx-text-fill: #F3F4F8;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 1); /* Enhanced shadow on hover */
-    -fx-scale-x: 1.03; /* Slightly enlarge button on hover */
-    -fx-scale-y: 1.03; /* Slightly enlarge button on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 1);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
 }
 
 .button:pressed {
-    -fx-background-color: #30303A; /* Darker shade for pressed state */
-    -fx-effect: none; /* Remove shadow on press */
-    -fx-scale-x: 1.0; /* Return to original size */
-    -fx-scale-y: 1.0; /* Return to original size */
+    -fx-background-color: #30303A;
+    -fx-effect: none;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
 }
 
 
@@ -307,13 +307,13 @@
     -fx-border-width: 0px;
     -fx-border-color: #D2D4DA;
     -fx-background-radius: 5;
-    -fx-table-cell-border-color: transparent; /* Remove cell borders for cleaner look */
-    -fx-padding: 5; /* Add padding around the table */
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 5;
 }
 
 .table-row-cell {
     -fx-background-color: transparent;
-    -fx-border-width: 0px; /* Remove row cell borders */
+    -fx-border-width: 0px;
 }
 
 .table-row-cell:odd {
@@ -348,7 +348,7 @@
     -fx-background-color: #D2D4DA;
     -fx-border-width: 1px;
     -fx-border-color: #B3B5BD;
-    -fx-font-weight: bold; /* Bold text for headers */
+    -fx-font-weight: bold;
 }
 
 .table-view .column-header-background {
@@ -413,44 +413,44 @@
 }
 
 .combo-box .arrow-button:hover {
-    -fx-background-color: #e0e0e0; /* Light grey hover color */
+    -fx-background-color: #e0e0e0;
 }
 
 .combo-box .arrow-button .arrow {
-    -fx-background-color: #404252; /* Arrow color */
+    -fx-background-color: #404252;
 
 }
 
 .combo-box:focused {
-    -fx-border-color: #404252; /* Border color on focus */
+    -fx-border-color: #404252;
         -fx-border-width: 2;
-    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2); /* Enhanced shadow on focus */
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2);
 }
 
 .combo-box .list-view {
-    -fx-background-color: #f0f0f0; /* Popup background color */
+    -fx-background-color: #f0f0f0;
     -fx-background-radius: 8;
-    -fx-border-color: #cccccc; /* Popup border color */
+    -fx-border-color: #cccccc;
     -fx-border-width: 1;
     -fx-border-radius: 8;
-    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.2), 10, 0, 0, 2); /* Soft shadow */
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.2), 10, 0, 0, 2);
 }
 
 .combo-box .list-view .list-cell {
     -fx-background-color: #ffffff;
     -fx-text-fill: #404252;
-    -fx-padding: 5 8; /* Padding for list items */
-    -fx-border-width: 0 0 1 0; /* Bottom border for list items */
+    -fx-padding: 5 8;
+    -fx-border-width: 0 0 1 0;
     -fx-border-color: #e0e0e0;
 }
 
 .combo-box .list-view .list-cell:last-child {
-    -fx-border-width: 0; /* No bottom border for the last item */
+    -fx-border-width: 0;
 }
 
 .combo-box .list-view .list-cell:hover {
     -fx-background-color: #404252;
-    -fx-text-fill: #ffffff; /* Text color on hover */
+    -fx-text-fill: #ffffff;
 }
 
 
@@ -469,8 +469,8 @@
 }
 
 .date-picker:focused {
-    -fx-border-color: #404252; /* Border color on focus */
-    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2); /* Enhanced shadow on focus */
+    -fx-border-color: #404252;
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.5), 8, 0, 0, 2);
 }
 
 .date-picker .arrow-button {
@@ -481,34 +481,34 @@
 }
 
 .date-picker .arrow-button:hover {
-    -fx-background-color: #e0e0e0; /* Light grey hover color */
+    -fx-background-color: #e0e0e0;
 }
 
 .date-picker .arrow-button .arrow {
-    -fx-background-color: #404252; /* Arrow color */
+    -fx-background-color: #404252;
 }
 
 .date-picker .popup {
-    -fx-background-color: #f0f0f0; /* Popup background color */
+    -fx-background-color: #f0f0f0;
     -fx-background-radius: 8;
-    -fx-border-color: #cccccc; /* Popup border color */
+    -fx-border-color: #cccccc;
     -fx-border-width: 1;
     -fx-border-radius: 8;
-    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.2), 10, 0, 0, 2); /* Soft shadow */
+    -fx-effect: dropshadow(three-pass-box, rgba(64, 66, 82, 0.2), 10, 0, 0, 2);
 }
 
 .date-picker .day-cell {
     -fx-background-color: #ffffff;
     -fx-text-fill: #404252;
-    -fx-padding: 5 8; /* Padding for day cells */
+    -fx-padding: 5 8;
 }
 
 .date-picker .day-cell:hover {
     -fx-background-color: #404252;
-    -fx-text-fill: #ffffff; /* Text color on hover */
+    -fx-text-fill: #ffffff;
 }
 
 .date-picker .date-picker-label {
-    -fx-font-size: 14px; /* Adjusted font size */
+    -fx-font-size: 14px;
     -fx-text-fill: #404252;
 }
