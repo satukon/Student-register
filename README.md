@@ -17,7 +17,7 @@
 - Get printable student records in PDF form
 
 ## Learning objectives
-- To showcase my code and my Java programming skills
+- To showcase my code and my Java code and app building skills
   
 ## Prerequisites
 - Project type: Maven, Java 17
