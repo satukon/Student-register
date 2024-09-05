@@ -1,5 +1,6 @@
 # Student Register
-Maintain a register of students, courses and the course records of students by performing CRUD operations. Get printable student records in PDF form.
+- Maintain a register of students, courses and the course records of students by performing CRUD operations
+- Get printable student records in PDF form
 
 ## Screenshots
 
