@@ -15,7 +15,7 @@
 ## Info
 - Project type: Solo
 - Technologies used: Java, JavaFX, CSS, SQLite
-- Objective: To showcase my proficiency in Java and relational databases
+- Objectives: To my proficiency in Java and relational databases
 
 ## Features
 - has dynamic table operations: row objects have editable cells and their own delete buttons
