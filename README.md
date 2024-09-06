@@ -26,7 +26,7 @@
 ## Prerequisites
 - Maven and Java 17 installed
 - <a href="https://gluonhq.com/products/scene-builder/">SceneBuilder</a> installed
-- After this you can run the application from project root:
+- Then run the application from project root:
 ```
 mvn clean javafx:run
 ```
