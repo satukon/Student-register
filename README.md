@@ -18,10 +18,10 @@
 - Objectives: To my proficiency in Java and relational databases
 
 ## Features
-- has dynamic table operations: row objects have editable cells and their own delete buttons
-- has incremental search functions
-- builds PDF reports
-- uses SQLite database (for easy deployment)
+- dynamic table operations: row objects have editable cells and their own delete buttons
+- incremental search functions
+- builds PDF reports of student records
+- uses SQLite database
   
 ## Prerequisites
 - Maven and Java 17 installed
