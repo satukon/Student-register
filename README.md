@@ -20,8 +20,8 @@
 ## Features
 - dynamic table operations: row objects have editable cells and their own delete buttons
 - incremental search functions
-- builds PDF reports of student records
-- uses SQLite database
+- builds PDF reports
+- uses a relational database
   
 ## Prerequisites
 - Maven and Java 17 installed
