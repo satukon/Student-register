@@ -4,6 +4,7 @@
 
 ## Goals
 - As this was an university project, the main goal was to learn basic application development: to perform CRUD-operations between UI and a database, and to implement business logic to UI elements.
+- This does not represent my current skill level any more, but demonstrates basic knowledge of Java programming 🙏
 
 ## Screenshots
 
@@ -20,8 +21,9 @@
 - <a href="https://gluonhq.com/products/scene-builder/">SceneBuilder</a> installed
 
 ## Running the app
-- Currently, the project uses an in-memory database initialized at startup, so no need to set up a local db for it
-- To run the application navigate to project root and simply run command
+- On first time the application is run, an SQLite database will be created to project root directory with some mock data
+- To run the application navigate to project root and simply run:
 ```
 mvn clean javafx:run
 ```
+
