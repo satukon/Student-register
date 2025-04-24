@@ -1,6 +1,9 @@
-# Student Register
-- Maintain a register of students, courses and the course records of students by performing CRUD operations
-- Get printable student records in PDF form
+## Student Register
+- This is an on-premises Java program I created when I studied for my Bachelor's in 2023 - 2024
+- With this program, user can maintain a register of students, courses and course records by performing CRUD operations against an SQLite database. Records can also be opened in PDF form.
+
+## Goals
+- As this was an university project, the main goal was to learn basic application development: to perform CRUD-operations between UI and a database, and to implement business logic to UI elements.
 
 ## Screenshots
 
@@ -11,22 +14,14 @@
 ![Screenshot 2024-07-03 at 12 31 15](https://github.com/satukon/Student-register/assets/113008423/2dd46416-f11b-461e-8546-3923b76f25ab)
 
 <img width="1206" alt="Screenshot 2024-07-03 at 12 41 07" src="https://github.com/satukon/Student-register/assets/113008423/26a487f7-22ab-4217-9185-38827f5a7362">
-
-## Info
-- Project type: Solo
-- Technologies used: Java, JavaFX, CSS, SQLite
-- Objectives: To my proficiency in Java and relational databases
-
-## Features
-- dynamic table operations: row objects have editable cells and their own delete buttons
-- incremental search functions
-- builds PDF reports
-- uses a relational database
   
 ## Prerequisites
 - Maven and Java 17 installed
 - <a href="https://gluonhq.com/products/scene-builder/">SceneBuilder</a> installed
-- Then run the application from project root:
+
+## Running the app
+- Currently, the project uses an in-memory database initialized at startup, so no need to set up a local db for it
+- To run the application navigate to project root and simply run command
 ```
 mvn clean javafx:run
 ```
